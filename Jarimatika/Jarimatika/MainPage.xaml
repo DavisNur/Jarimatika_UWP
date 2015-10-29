@@ -32,7 +32,8 @@
             <TextBlock Name="TitleTextBlock"
                        RelativePanel.RightOf="BackButton"
                        FontSize="36"
-                       FontWeight="Bold"/>
+                       FontWeight="Bold"
+                       Margin="10,0,0,0"/>
         </RelativePanel>
 
         <SplitView Grid.Row="1"

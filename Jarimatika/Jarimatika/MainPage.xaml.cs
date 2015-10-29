@@ -25,6 +25,10 @@ namespace Jarimatika
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(KonsepPage));
+            TitleTextBlock.Text = "KONSEP";
+            Konsep.IsSelected = true;
+            BackButton.Visibility = Visibility.Collapsed;
         }
 
         private void HambergerButton_Click(object sender, RoutedEventArgs e)
@@ -34,12 +38,27 @@ namespace Jarimatika
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (MyFrame.CanGoBack)
+            {
+                MyFrame.GoBack();
+                Konsep.IsSelected = true;
+            }
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (Konsep.IsSelected)
+            {
+                MyFrame.Navigate(typeof(KonsepPage));
+                TitleTextBlock.Text = "KONSEP";
+                BackButton.Visibility = Visibility.Collapsed;
+            }
+            else if (Simbol.IsSelected)
+            {
+                MyFrame.Navigate(typeof(SimbolPage));
+                TitleTextBlock.Text = "SIMBOL";
+                BackButton.Visibility = Visibility.Visible;
+            }
         }
     }
 }
