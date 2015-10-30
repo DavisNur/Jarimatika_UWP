@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -28,7 +28,7 @@
                 BorderBrush="Gray"
                 BorderThickness="0,0,2,0">
             <StackPanel>
-                <TextBlock x:Name="textBlock" Text="Tangan Kiri" FontSize="36" FontWeight="Bold" Foreground="White"/>
+                <TextBlock x:Name="textBlock" Text="Tangan Kiri" FontSize="16" FontWeight="Bold" Foreground="White"/>
             </StackPanel>
         </Button>
 
@@ -41,7 +41,7 @@
                 BorderBrush="Gray"
                 BorderThickness="0,0,2,0">
             <StackPanel>
-                <TextBlock Text="Tangan Kanan" FontSize="36" FontWeight="Bold" Foreground="White"/>
+                <TextBlock Text="Tangan Kanan" FontSize="16" FontWeight="Bold" Foreground="White"/>
             </StackPanel>
         </Button>
 
