@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jarimatika.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,21 +21,14 @@ namespace Jarimatika
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SimbolPage : Page
+    public sealed partial class JariKanan : Page
     {
-        public SimbolPage()
+        private List<SimbolKanan> Kanans;
+
+        public JariKanan()
         {
             this.InitializeComponent();
-        }
-
-        private void TanganKiri_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void TanganKanan_Click(object sender, RoutedEventArgs e)
-        {
-            FrameJari.Navigate(typeof(JariKanan));
+            Kanans = SimbolkananManager.GekKanan();
         }
     }
 }

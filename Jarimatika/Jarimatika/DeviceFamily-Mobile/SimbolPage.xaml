@@ -45,5 +45,7 @@
             </StackPanel>
         </Button>
 
+        <Frame Grid.Row="1" Grid.ColumnSpan="2" Name="FrameJari"></Frame>
+
     </Grid>
 </Page>

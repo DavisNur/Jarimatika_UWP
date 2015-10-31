@@ -99,13 +99,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="JariKanan.xaml.cs">
+      <DependentUpon>JariKanan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="KonsepPage.xaml.cs">
       <DependentUpon>KonsepPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\SimbolKanan.cs" />
+    <Compile Include="Models\SimbolKanan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimbolPage.xaml.cs">
       <DependentUpon>SimbolPage.xaml</DependentUpon>
@@ -122,6 +125,15 @@
     <Content Include="Assets\Square150x150Logo.scale-100.png" />
     <Content Include="Assets\Square44x44Logo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\TanganKanan\Delapan.png" />
+    <Content Include="Assets\TanganKanan\Dua.png" />
+    <Content Include="Assets\TanganKanan\Empat.png" />
+    <Content Include="Assets\TanganKanan\Enam.png" />
+    <Content Include="Assets\TanganKanan\Lima.png" />
+    <Content Include="Assets\TanganKanan\Satu.png" />
+    <Content Include="Assets\TanganKanan\Sembilan.png" />
+    <Content Include="Assets\TanganKanan\Tiga.png" />
+    <Content Include="Assets\TanganKanan\Tujuh.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
@@ -133,6 +145,10 @@
     <Page Include="DeviceFamily-Mobile\SimbolPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="JariKanan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="KonsepPage.xaml">
       <SubType>Designer</SubType>

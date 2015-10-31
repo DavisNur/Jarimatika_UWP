@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Jarimatika.JariKanan"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jarimatika"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Jarimatika.Models"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <GridView ItemsSource="{x:Bind Kanans}">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:SimbolKanan">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image Width="150" Source="{x:Bind GambarJari}"/>
+                        <TextBlock FontSize="16" Text="{x:Bind SimbolAngka}" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        
+    </Grid>
+</Page>
