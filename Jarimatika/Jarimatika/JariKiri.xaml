@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Jarimatika.JariKanan"
+    x:Class="Jarimatika.JariKiri"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Jarimatika"
@@ -10,7 +10,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <GridView ItemsSource="{x:Bind Kanans}">
+        <GridView ItemsSource="{x:Bind Kiris}">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="data:SimbolJari">
                     <StackPanel HorizontalAlignment="Center">
@@ -20,6 +20,6 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        
+
     </Grid>
 </Page>

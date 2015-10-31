@@ -29,7 +29,7 @@ namespace Jarimatika
 
         private void TanganKiri_Click(object sender, RoutedEventArgs e)
         {
-            
+            FrameJari.Navigate(typeof(JariKiri));
         }
 
         private void TanganKanan_Click(object sender, RoutedEventArgs e)

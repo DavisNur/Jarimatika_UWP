@@ -21,14 +21,14 @@ namespace Jarimatika
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class JariKanan : Page
+    public sealed partial class JariKiri : Page
     {
-        private List<SimbolJari> Kanans;
+        private List<SimbolJari> Kiris;
 
-        public JariKanan()
+        public JariKiri()
         {
             this.InitializeComponent();
-            Kanans = SimbolkananManager.GetKanan();
+            Kiris = SimbolKiriManager.GetKiri();
         }
     }
 }
