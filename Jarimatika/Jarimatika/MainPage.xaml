@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Black">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -20,36 +20,42 @@
                     FontFamily="Segoe MDL2 Assets"
                     FontSize="36"
                     Content="&#xE700;"
-                    Click="HambergerButton_Click"/>
+                    Click="HambergerButton_Click"
+                    Foreground="White"/>
             
             <Button Name="BackButton"
                     RelativePanel.RightOf="HambergerButton"
                     FontFamily="Segoe MDL2 Assets"
                     FontSize="36"
                     Content="&#xE0C4;"
-                    Click="BackButton_Click"/>
+                    Click="BackButton_Click"
+                    Foreground="White"/>
             
             <TextBlock Name="TitleTextBlock"
                        RelativePanel.RightOf="BackButton"
                        FontSize="36"
                        FontWeight="Bold"
-                       Margin="10,0,0,0"/>
+                       Margin="10,0,0,0"
+                       Foreground="White"/>
         </RelativePanel>
 
-        <SplitView Grid.Row="1"
+        <SplitView Grid.Row="1" 
                    Name="MySplitView"
                    DisplayMode="CompactOverlay"
                    OpenPaneLength="200"
-                   CompactPaneLength="56">
+                   CompactPaneLength="56"
+                   Background="Black">
             <SplitView.Pane>
                 <ListBox SelectionMode="Single"
-                         SelectionChanged="ListBox_SelectionChanged">
+                         SelectionChanged="ListBox_SelectionChanged"
+                         Background="Black">
                     <ListBoxItem Name="Konsep">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="36"
-                                       Text="&#xE1C2;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Konsep</TextBlock>
+                                       Text="&#xE1C2;"
+                                       Foreground="White"/>
+                            <TextBlock Foreground="White" FontSize="24" Margin="20,0,0,0">Konsep</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
 
@@ -57,8 +63,9 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="36"
-                                       Text="&#xE209;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Simbol</TextBlock>
+                                       Text="&#xE209;"
+                                       Foreground="White"/>
+                            <TextBlock Foreground="White" FontSize="24" Margin="20,0,0,0">Simbol</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
 
@@ -66,17 +73,9 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="36"
-                                       Text="&#xE1A6;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Contoh</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
-
-                    <ListBoxItem Name="About">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets"
-                                       FontSize="36"
-                                       Text="&#xE170;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">About</TextBlock>
+                                       Text="&#xE1A6;"
+                                       Foreground="White"/>
+                            <TextBlock Foreground="White" FontSize="24" Margin="20,0,0,0">Contoh</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

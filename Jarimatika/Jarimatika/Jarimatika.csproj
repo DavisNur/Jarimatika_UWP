@@ -17,7 +17,10 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Jarimatika_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Jarimatika_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>A63A5F05ED0DB42810C80061797C16A9A18BB518</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -93,11 +96,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Jarimatika_StoreKey.pfx" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContohPage.xaml.cs">
+      <DependentUpon>ContohPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="JariKanan.xaml.cs">
       <DependentUpon>JariKanan.xaml</DependentUpon>
@@ -124,6 +131,16 @@
     <None Include="Jarimatika_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Contoh\con1.PNG" />
+    <Content Include="Assets\Contoh\con10.PNG" />
+    <Content Include="Assets\Contoh\con2.PNG" />
+    <Content Include="Assets\Contoh\con3.PNG" />
+    <Content Include="Assets\Contoh\con4.PNG" />
+    <Content Include="Assets\Contoh\con5.PNG" />
+    <Content Include="Assets\Contoh\con6.PNG" />
+    <Content Include="Assets\Contoh\con7.PNG" />
+    <Content Include="Assets\Contoh\con8.PNG" />
+    <Content Include="Assets\Contoh\con9.PNG" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\Square150x150Logo.scale-100.png" />
     <Content Include="Assets\Square44x44Logo.scale-100.png" />
@@ -147,6 +164,7 @@
     <Content Include="Assets\TanganKiri\Tigapuluh.png" />
     <Content Include="Assets\TanganKiri\Tujuhpuluh.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +172,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ContohPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DeviceFamily-Mobile\SimbolPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

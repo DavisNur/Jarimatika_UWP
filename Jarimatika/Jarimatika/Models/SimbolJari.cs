@@ -12,6 +12,11 @@ namespace Jarimatika.Models
         public string SimbolAngka { get; set; }
     }
 
+    class ContohJari
+    {
+        public string GambarContoh { get; set; }
+    }
+
     public class SimbolkananManager
     {
         internal static List<SimbolJari> GetKanan()
@@ -49,6 +54,27 @@ namespace Jarimatika.Models
             kiris.Add(new SimbolJari { GambarJari = "Assets/TanganKiri/Sembilanpuluh.png", SimbolAngka = "Sembilanpuluh" });
 
             return kiris;
+        }
+    }
+
+    public class ContohJariManager
+    {
+        internal static List<ContohJari> GetContoh()
+        {
+            var contohs = new List<ContohJari>();
+
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con1.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con2.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con3.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con4.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con5.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con6.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con7.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con8.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con9.png" });
+            contohs.Add(new ContohJari { GambarContoh = "Assets/Contoh/con10.png" });
+
+            return contohs;
         }
     }
 }

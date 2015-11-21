@@ -59,6 +59,12 @@ namespace Jarimatika
                 TitleTextBlock.Text = "SIMBOL";
                 BackButton.Visibility = Visibility.Visible;
             }
+            else if (Contoh.IsSelected)
+            {
+                MyFrame.Navigate(typeof(ContohPage));
+                TitleTextBlock.Text = "CONTOH";
+                BackButton.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }
